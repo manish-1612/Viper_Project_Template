@@ -12,8 +12,8 @@ import UIKit
 
 
 //MARK: View -
-protocol RiderSidePanelViewProtocol: class {
-    var presenter: RiderSidePanelPresenterProtocol?  { get set }
+protocol SidePanelViewProtocol: class {
+    var presenter: SidePanelPresenterProtocol?  { get set }
     /**
      * Add here your methods for communication PRESENTER -> VIEW
      */
@@ -24,16 +24,16 @@ protocol RiderSidePanelViewProtocol: class {
 }
 
 //MARK: Wireframe -
-protocol RiderSidePanelWireframeProtocol: class {
+protocol SidePanelWireframeProtocol: class {
     var rootWireframe: RootWireframe { get set }
-    func presentRiderSidePanelModule(fromWindow window: UIWindow)
-    func presentRiderSidePanelModule(fromNavView view: UINavigationController)
-    func presentRiderSidePanelModule(fromView view: UIViewController)
+    func presentSidePanelModule(fromWindow window: UIWindow)
+    func presentSidePanelModule(fromNavView view: UINavigationController)
+    func presentSidePanelModule(fromView view: UIViewController)
     /**
      * Add here your methods for communication PRESENTER -> WIREFRAME
      */
     
-    func presentRiderSidePanelControllerModule(fromWindow window: UIWindow,
+    func presentSidePanelControllerModule(fromWindow window: UIWindow,
                                          rootViewController: UIViewController)
     
     func presentLoginScreen()
@@ -41,7 +41,7 @@ protocol RiderSidePanelWireframeProtocol: class {
 }
 
 //MARK: Presenter -
-protocol RiderSidePanelPresenterProtocol: class {
+protocol SidePanelPresenterProtocol: class {
     /**
      * Add here your methods for communication VIEW -> PROTOCOL
      */
@@ -56,11 +56,11 @@ protocol RiderSidePanelPresenterProtocol: class {
 }
 
 //MARK: Interactor -
-protocol RiderSidePanelInteractorInputProtocol: class {
+protocol SidePanelInteractorInputProtocol: class {
     
-    var presenter: RiderSidePanelPresenterProtocol?  { get set }
-    var APIDataManager: RiderSidePanelAPIDataManagerInputProtocol? { get set }
-    var localDataManager: RiderSidePanelLocalDataManagerInputProtocol? { get set }
+    var presenter: SidePanelPresenterProtocol?  { get set }
+    var APIDataManager: SidePanelAPIDataManagerInputProtocol? { get set }
+    var localDataManager: SidePanelLocalDataManagerInputProtocol? { get set }
     
     /**
      * Add here your methods for communication PRESENTER -> INTERACTOR
@@ -68,21 +68,21 @@ protocol RiderSidePanelInteractorInputProtocol: class {
     
     func logoutUser()
 }
-protocol RiderSidePanelInteractorOutputProtocol: class {
+protocol SidePanelInteractorOutputProtocol: class {
     
-    var presenter: RiderSidePanelPresenterProtocol?  { get set }
+    var presenter: SidePanelPresenterProtocol?  { get set }
     /**
      * Add here your methods for communication INTERACTOR -> PRESENTER
      */
     
-    func directUserAsPerServerResponseForLogout(response : DataResponse<BRServerResponse<BRNil>>)
+    func directUserAsPerServerResponseForLogout(response : String)
 }
 
 
 
 
 //MARK: - DataManager -
-protocol RiderSidePanelDataManagerInputProtocol: class {
+protocol SidePanelDataManagerInputProtocol: class {
     /**
      * Add here your methods for communication INTERACTOR -> DATAMANAGER
      */
@@ -90,7 +90,7 @@ protocol RiderSidePanelDataManagerInputProtocol: class {
 }
 
 //MARK: API -
-protocol RiderSidePanelAPIDataManagerInputProtocol: class {
+protocol SidePanelAPIDataManagerInputProtocol: class {
     /**
      * Add here your methods for communication INTERACTOR -> APIDATAMANAGER
      */
@@ -100,7 +100,7 @@ protocol RiderSidePanelAPIDataManagerInputProtocol: class {
 }
 
 //MARK: Local -
-protocol RiderSidePanelLocalDataManagerInputProtocol: class {
+protocol SidePanelLocalDataManagerInputProtocol: class {
     /**
      * Add here your methods for communication INTERACTOR -> LOCALDATAMANAGER
      */

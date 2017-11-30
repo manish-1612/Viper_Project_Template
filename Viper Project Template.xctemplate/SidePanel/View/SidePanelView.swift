@@ -21,7 +21,6 @@ class SidePanelView: UIViewController, SidePanelViewProtocol {
     //   RiderApp SideMenu Modules VC
     // ----------------------------------------------------------------
     
-    var editProfileView : EditProfileView?
     var homeView : HomeView?
     
     var isFirstSelectionDone = false
@@ -47,7 +46,7 @@ class SidePanelView: UIViewController, SidePanelViewProtocol {
         
         tableview.tableFooterView = tableFooterVersionView
     
-        let appDelegate = UIApplication.shared.delegate as! BRRAppDelegate
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let appDependencies = appDelegate.appDependencies
         
 //        editProfileView = appDependencies.editProfileWireframe.view
@@ -81,7 +80,7 @@ class SidePanelView: UIViewController, SidePanelViewProtocol {
     func registerForNotifications(){
 //        NotificationCenter.default.addObserver(self, selector: #selector(SidePanelView.handleUserUpdateNotification(notification:)), name: BRNotifications.riderProfileUpdate.name, object: nil)
         
-        NotificationCenter.default.addObserver(self, selector: #selector(SidePanelView.sessionExpired), name: BRNotifications.sessionOut.name, object: nil)
+       // NotificationCenter.default.addObserver(self, selector: #selector(SidePanelView.sessionExpired), name: BRNotifications.sessionOut.name, object: nil)
     }
 
     
@@ -146,6 +145,7 @@ extension SidePanelView : UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
+        /*
         if section == 0{
             return 1
         }else if section == 1{
@@ -154,7 +154,9 @@ extension SidePanelView : UITableViewDataSource{
             return SideMenuRiderAppOptions.count
         }else{
             return 1
-        }
+        }*/
+        
+        return 4
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{

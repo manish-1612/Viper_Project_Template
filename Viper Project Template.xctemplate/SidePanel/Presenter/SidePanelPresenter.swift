@@ -29,7 +29,7 @@ class SidePanelPresenter: SidePanelPresenterProtocol {
     
     func showScreenWith(controller: UIViewController) {
         
-        let appDelegate = UIApplication.shared.delegate as? BRRAppDelegate
+        let appDelegate = UIApplication.shared.delegate as? AppDelegate
         let window = appDelegate!.window
         
         self.wireframe.presentSidePanelControllerModule(fromWindow: window!, rootViewController: controller)
