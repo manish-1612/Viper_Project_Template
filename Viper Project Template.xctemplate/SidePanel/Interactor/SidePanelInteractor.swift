@@ -8,7 +8,7 @@
 //
 
 import UIKit
-import Alamofire
+
 
 class  SidePanelInteractor:  SidePanelInteractorInputProtocol,
      SidePanelInteractorOutputProtocol{

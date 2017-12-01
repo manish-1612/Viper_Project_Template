@@ -65,7 +65,11 @@
 						<string>SidePanel/Presenter/SidePanelPresenter.swift</string>
 						<string>SidePanel/Protocols/SidePanelProtocols.swift</string>
 						<string>SidePanel/View/SidePanelView.swift</string>
+						<string>SidePanel/Wireframe/SidePanelWireframe.swift</string>
 						<string>SidePanel/SidePanel.storyboard</string>
+						<string>AppDelegate.swift</string>
+						<string>AppDelegate/AppDependencies.swift</string>
+						<string>Resources/View/RootWireframe.swift</string>
 					</array>
 				</dict>
 			</dict>
@@ -79,6 +83,34 @@
 			<string>Main.storyboard</string>
 			<key>SortOrder</key>
 			<integer>99</integer>
+		</dict>
+		<key>AppDelegate.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>AppDelegate/AppDelegate.swift</string>
+			<key>Group</key>
+			<array>
+				<string>AppDelegate</string>
+			</array>
+		</dict>
+		<key>AppDelegate/AppDependencies.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>AppDelegate/AppDependencies.swift</string>
+			<key>Group</key>
+			<array>
+				<string>AppDelegate</string>
+			</array>
+		</dict>
+		<key>Resources/View/RootWireframe.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>Resources/View/RootWireframe.swift</string>
+			<key>Group</key>
+			<array>
+				<string>Resources</string>
+				<string>View</string>
+			</array>
 		</dict>
 		<key>Login/DataManager/API/LoginAPIDataManager.swift</key>
 		<dict>
@@ -221,6 +253,16 @@
 			<array>
 				<string>SidePanel</string>
 				<string>View</string>
+			</array>
+		</dict>
+		<key>SidePanel/Wireframe/SidePanelWireframe.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>SidePanel/Wireframe/SidePanelWireframe.swift</string>
+			<key>Group</key>
+			<array>
+				<string>SidePanel</string>
+				<string>Wireframe</string>
 			</array>
 		</dict>
 		<key>SidePanel/SidePanel.storyboard</key>
