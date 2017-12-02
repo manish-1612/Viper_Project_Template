@@ -21,7 +21,7 @@ class SidePanelView: UIViewController, SidePanelViewProtocol {
     //   RiderApp SideMenu Modules VC
     // ----------------------------------------------------------------
     
-    var homeView : HomeView?
+//    var homeView : HomeView?
     
     var isFirstSelectionDone = false
     
@@ -47,10 +47,10 @@ class SidePanelView: UIViewController, SidePanelViewProtocol {
         tableview.tableFooterView = tableFooterVersionView
     
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        let appDependencies = appDelegate.appDependencies
+        //let appDependencies = appDelegate.appDependencies
         
 //        editProfileView = appDependencies.editProfileWireframe.view
-        homeView = appDependencies.homeWireFrame.view
+//        homeView = appDependencies.homeWireFrame.view
 //        bidListView = appDependencies.bidListWireframe.view
 //        myRidesView = appDependencies.myRidesWireFrame.view
 //        paymentsView = appDependencies.paymentsWireFrame.view
@@ -68,7 +68,7 @@ class SidePanelView: UIViewController, SidePanelViewProtocol {
     override func viewWillAppear(_ animated : Bool){
         super.viewWillAppear(animated)
         
-        getRiderDetails()
+        //getRiderDetails()
         
     }
     
@@ -242,10 +242,10 @@ extension SidePanelView : UITableViewDataSource{
     }*/
     
         
-        let cell = tableView.dequeueReusableCell(withIdentifier : "BRMenuCell") as? BRMenuCell
+        let cell = tableView.dequeueReusableCell(withIdentifier : "BRMenuCell") //as? BRMenuCell
         cell?.selectionStyle = UITableViewCellSelectionStyle.none
 
-        return cell?
+        return cell!
     }
 }
 

@@ -18,6 +18,10 @@ class SidePanelAPIDataManager: SidePanelAPIDataManagerInputProtocol {
         self.interactor = interactor
     }
     
+    func makeAPICallToLogoutUser() {
+        
+    }
+    
 
 
 }

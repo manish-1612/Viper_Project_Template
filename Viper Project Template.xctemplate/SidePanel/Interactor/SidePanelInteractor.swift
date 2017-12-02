@@ -20,4 +20,13 @@ class  SidePanelInteractor:  SidePanelInteractorInputProtocol,
     init() {
         self.APIDataManager =  SidePanelAPIDataManager(interactor: self)
     }
+    
+    func logoutUser() {
+        
+    }
+    
+    func directUserAsPerServerResponseForLogout(response: String) {
+        
+    }
+
 }

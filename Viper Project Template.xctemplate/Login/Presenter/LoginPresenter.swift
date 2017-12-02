@@ -9,9 +9,9 @@
 
 import UIKit
 
-class LoginPresenter: LoginPresenterPresenterProtocol {
+class LoginPresenter: LoginPresenterProtocol {
 
-    weak private var view: LoginPresenterViewProtocol?
+    weak private var view: LoginViewProtocol?
     private let interactor: LoginInteractorInputProtocol
     private let wireframe: LoginWireframeProtocol
 
