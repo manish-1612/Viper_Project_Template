@@ -29,8 +29,7 @@ class AppDependencies {
     func installRootViewControllerIntoWindow(_ window: UIWindow) {
         // TODO: Which module is going to be presented?
         
-        launchScreenWireframe.presentLaunchScreenModule(fromWindow: window)
-        //loginWireFrame.presentLoginModule(fromView: window)
+        loginWireFrame.presentLoginModule(fromWindow: window)
     }
     
     
@@ -42,8 +41,8 @@ class AppDependencies {
         // ----------------------------------------------------------------
 
         //sidepanel
-        riderSidePanelWireframe.rootWireframe = rootWireframe
-        riderSidePanelWireframe.loginWireframe = loginWireFrame
+        sidePanelWireframe.rootWireframe = rootWireframe
+        sidePanelWireframe.loginWireframe = loginWireFrame
     }
     
 

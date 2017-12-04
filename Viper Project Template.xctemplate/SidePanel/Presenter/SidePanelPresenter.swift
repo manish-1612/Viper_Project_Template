@@ -34,5 +34,18 @@ class SidePanelPresenter: SidePanelPresenterProtocol {
         
         self.wireframe.presentSidePanelControllerModule(fromWindow: window!, rootViewController: controller)
     }
+    
+    func logoutUser() {
+        
+    }
+    
+    func logoutUserFailedWith(error: String) {
+        
+    }
+    
+    func logoutUserSuccessful() {
+        
+    }
+
 
 }
