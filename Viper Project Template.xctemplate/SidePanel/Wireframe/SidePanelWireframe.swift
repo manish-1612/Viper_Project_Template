@@ -20,7 +20,7 @@ class SidePanelWireframe: SidePanelWireframeProtocol {
     
     init() {
         // Change to get view from storyboard if not using progammatic UI
-        self.view = SidePanelView.instantiate(fromAppStoryboard: .RiderSidePanel)
+        self.view = SidePanelView.instantiate(fromAppStoryboard: .SidePanel)
         let interactor = SidePanelInteractor()
         let presenter = SidePanelPresenter(interface: view, interactor: interactor, wireframe: self)
         view.presenter = presenter

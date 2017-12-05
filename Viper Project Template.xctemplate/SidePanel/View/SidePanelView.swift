@@ -1,9 +1,9 @@
 //
 //  RiderSidePanelView.swift
-//  ___PROJECTNAME___
+//  hello
 //
-//  Created ___FULLUSERNAME___ on ___DATE___.
-//  Copyright © ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
+//  Created Manish Kumar on 05/12/17.
+//  Copyright © 2017 Innofied. All rights reserved.
 //
 //
 
@@ -15,11 +15,6 @@ class SidePanelView: UIViewController, SidePanelViewProtocol {
 	var presenter: SidePanelPresenterProtocol?
 
     @IBOutlet weak var tableview: UITableView!
-    @IBOutlet weak var tableFooterVersionView: UIView!
-
-    // ----------------------------------------------------------------
-    //   RiderApp SideMenu Modules VC
-    // ----------------------------------------------------------------
     
 //    var homeView : HomeView?
     
@@ -44,8 +39,8 @@ class SidePanelView: UIViewController, SidePanelViewProtocol {
         // Do any additional setup after loading the view.
         registerForNotifications()
         
-        tableview.tableFooterView = tableFooterVersionView
-    
+
+        
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         //let appDependencies = appDelegate.appDependencies
         

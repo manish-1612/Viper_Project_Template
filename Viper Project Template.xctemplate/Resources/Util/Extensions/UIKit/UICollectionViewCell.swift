@@ -9,15 +9,15 @@
 import Foundation
 import UIKit
 
-extension UICollectionViewCell {
-    override class var indentifire: String {
-        return "\(self)"
-    }
-    static func instantiateAsReusable(inCollectionView collectionView: UICollectionView,
-                                      at indexPath: IndexPath) -> Self {
-        return collectionView.dequeCell(cellClass: self, at: indexPath)
-    }
-}
+//extension UICollectionViewCell {
+//    override class var indentifire: String {
+//        return "\(self)"
+//    }
+//    static func instantiateAsReusable(inCollectionView collectionView: UICollectionView,
+//                                      at indexPath: IndexPath) -> Self {
+//        return collectionView.dequeCell(cellClass: self, at: indexPath)
+//    }
+//}
 
 extension UICollectionReusableView {
     class var indentifire: String {
