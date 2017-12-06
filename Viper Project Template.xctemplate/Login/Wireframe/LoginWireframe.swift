@@ -13,6 +13,9 @@ class LoginWireframe: LoginWireframeProtocol {
     
     var rootWireframe: RootWireframe?
     var view: LoginView!
+    var sidePanelWireframe : SidePanelWireframe?
+    var homeWireframe : HomeWireframe?
+
 
     init() {
         // Change to get view from storyboard if not using progammatic UI
@@ -40,4 +43,12 @@ extension LoginWireframe {
     func presentLoginModule(fromWindow window: UIWindow) {
         self.rootWireframe?.showRootViewController(self.view, inWindow: window)
     }
+    
+    func loadHomeScreenWireframe() {
+        
+        let appDelegate = UIApplication.shared.delegate as? AppDelegate
+        
+        sidePanelWireframe?.presentSidePanelControllerModule(fromWindow: appDelegate!.window!, rootViewController: homeWireframe!.view)
+    }
+    
 }

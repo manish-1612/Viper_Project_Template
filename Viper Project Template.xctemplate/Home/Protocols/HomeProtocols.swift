@@ -1,5 +1,5 @@
 //
-//  LoginProtocols.swift
+//  HomeProtocols.swift
 //  ___PROJECTNAME___
 //
 //  Created ___FULLUSERNAME___ on ___DATE___.
@@ -12,49 +12,47 @@ import UIKit
 
 
 //MARK: View -
-protocol LoginViewProtocol: class {
-    var presenter: LoginPresenterProtocol?  { get set }
+protocol HomeViewProtocol: class {
+    var presenter: HomePresenterProtocol?  { get set }
     /**
      * Add here your methods for communication PRESENTER -> VIEW
      */
 }
 
 //MARK: Wireframe -
-protocol LoginWireframeProtocol: class {
+protocol HomeWireframeProtocol: class {
     var rootWireframe: RootWireframe? { get set }
-    func presentLoginModule(fromWindow window: UIWindow)
-    func presentLoginModule(fromNavView view: UINavigationController)
-    func presentLoginModule(fromView view: UIViewController)
+    func presentHomeModule(fromWindow window: UIWindow)
+    func presentHomeModule(fromNavView view: UINavigationController)
+    func presentHomeModule(fromView view: UIViewController)
     /**
      * Add here your methods for communication PRESENTER -> WIREFRAME
      */
     
-    func loadHomeScreenWireframe()
 }
 
 //MARK: Presenter -
-protocol LoginPresenterProtocol: class {
+protocol HomePresenterProtocol: class {
     /**
      * Add here your methods for communication VIEW -> PROTOCOL
      */
 
-    func showHomeScreen()
 }
 
 //MARK: Interactor -
-protocol LoginInteractorInputProtocol: class {
+protocol HomeInteractorInputProtocol: class {
     
-    var presenter: LoginPresenterProtocol?  { get set }
-    var APIDataManager: LoginAPIDataManagerInputProtocol? { get set }
-    var localDataManager: LoginLocalDataManagerInputProtocol? { get set }
+    var presenter: HomePresenterProtocol?  { get set }
+    var APIDataManager: HomeAPIDataManagerInputProtocol? { get set }
+    var localDataManager: HomeLocalDataManagerInputProtocol? { get set }
     
     /**
      * Add here your methods for communication PRESENTER -> INTERACTOR
      */
 }
-protocol LoginInteractorOutputProtocol: class {
+protocol HomeInteractorOutputProtocol: class {
     
-    var presenter: LoginPresenterProtocol?  { get set }
+    var presenter: HomePresenterProtocol?  { get set }
     /**
      * Add here your methods for communication INTERACTOR -> PRESENTER
      */
@@ -64,7 +62,7 @@ protocol LoginInteractorOutputProtocol: class {
 
 
 //MARK: - DataManager -
-protocol LoginDataManagerInputProtocol: class {
+protocol HomeDataManagerInputProtocol: class {
     /**
      * Add here your methods for communication INTERACTOR -> DATAMANAGER
      */
@@ -72,7 +70,7 @@ protocol LoginDataManagerInputProtocol: class {
 }
 
 //MARK: API -
-protocol LoginAPIDataManagerInputProtocol: class {
+protocol HomeAPIDataManagerInputProtocol: class {
     /**
      * Add here your methods for communication INTERACTOR -> APIDATAMANAGER
      */
@@ -80,7 +78,7 @@ protocol LoginAPIDataManagerInputProtocol: class {
 }
 
 //MARK: Local -
-protocol LoginLocalDataManagerInputProtocol: class {
+protocol HomeLocalDataManagerInputProtocol: class {
     /**
      * Add here your methods for communication INTERACTOR -> LOCALDATAMANAGER
      */

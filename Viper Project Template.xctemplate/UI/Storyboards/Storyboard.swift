@@ -11,6 +11,7 @@ import Foundation
 public enum Storyboard : String {
     case Login = "Login"
     case SidePanel = "SidePanel"
+    case Home = "Home"
 
 }
 

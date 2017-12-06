@@ -1,5 +1,5 @@
 //
-//  LoginView.swift
+//  HomeView.swift
 //  ___PROJECTNAME___
 //
 //  Created ___FULLUSERNAME___ on ___DATE___.
@@ -9,14 +9,9 @@
 
 import UIKit
 
-class LoginView: UIViewController, LoginViewProtocol {
+class HomeView: UIViewController, HomeViewProtocol {
 
-	var presenter: LoginPresenterProtocol?
-    
-    @IBOutlet weak var emailTextField: UITextField!
-    @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet weak var loginButton: UIButton!
-    
+	var presenter: HomePresenterProtocol?
 
     // MARK: - View Life Cycle Methods
 	override func viewDidLoad() {
@@ -39,19 +34,17 @@ class LoginView: UIViewController, LoginViewProtocol {
         super.viewWillDisappear(animated)
     }
     
-    
     //MARK:- IBActions
     
-    @IBAction func loginButtonClicked(_ sender: UIButton) {
-        print("hello")
-        
-        loginSuccessful()
+    @IBAction func menuButtonClicked(_ sender: UIButton) {
+        openSideMenu()
     }
     
-    func loginSuccessful(){
-        self.presenter?.showHomeScreen()
+    func openSideMenu(){
+        SlideNavigationController.sharedInstance().open(MenuLeft, withCompletion: {})
+        
     }
+
+    
     
 }
-
-

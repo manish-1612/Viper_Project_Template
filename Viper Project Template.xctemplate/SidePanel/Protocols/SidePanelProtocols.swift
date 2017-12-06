@@ -25,7 +25,7 @@ protocol SidePanelViewProtocol: class {
 
 //MARK: Wireframe -
 protocol SidePanelWireframeProtocol: class {
-    var rootWireframe: RootWireframe { get set }
+    var rootWireframe: RootWireframe? { get set }
     func presentSidePanelModule(fromWindow window: UIWindow)
     func presentSidePanelModule(fromNavView view: UINavigationController)
     func presentSidePanelModule(fromView view: UIViewController)

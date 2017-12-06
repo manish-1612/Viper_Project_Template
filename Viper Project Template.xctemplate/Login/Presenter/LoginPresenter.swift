@@ -23,4 +23,7 @@ class LoginPresenter: LoginPresenterProtocol {
         self.interactor.presenter = self
     }
 
+    func showHomeScreen() {
+        self.wireframe.loadHomeScreenWireframe()
+    }
 }

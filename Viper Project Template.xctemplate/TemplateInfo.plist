@@ -65,8 +65,19 @@
 						<string>SidePanel/Presenter/SidePanelPresenter.swift</string>
 						<string>SidePanel/Protocols/SidePanelProtocols.swift</string>
 						<string>SidePanel/View/SidePanelView.swift</string>
+						<string>SidePanel/View/CustomViews/LeftMenuCell/Emptycell.swift</string>
+						<string>SidePanel/View/CustomViews/LeftMenuCell/MenuCell.swift</string>
+						<string>SidePanel/View/CustomViews/LeftMenuCell/Profilecell.swift</string>
 						<string>SidePanel/Wireframe/SidePanelWireframe.swift</string>
 						<string>SidePanel/SidePanel.storyboard</string>
+						<string>Home/DataManager/API/HomeAPIDataManager.swift</string>
+						<string>Home/DataManager/Local/HomeLocalDataManager.swift</string>
+						<string>Home/Interactor/HomeInteractor.swift</string>
+						<string>Home/Presenter/HomePresenter.swift</string>
+						<string>Home/Protocols/HomeProtocols.swift</string>
+						<string>Home/View/HomeView.swift</string>
+						<string>Home/Wireframe/HomeWireframe.swift</string>
+						<string>Home/Home.storyboard</string>
 						<string>AppDelegate.swift</string>
 						<string>AppDelegate/AppDependencies.swift</string>
 						<string>Resources/View/RootWireframe.swift</string>
@@ -85,6 +96,7 @@
 						<string>Resources/View/SideMenu/Source/Animations/SlideNavigationContorllerAnimatorSlide.m</string>
 						<string>Resources/View/SideMenu/Source/Animations/SlideNavigationContorllerAnimatorSlideAndFade.h</string>
 						<string>Resources/View/SideMenu/Source/Animations/SlideNavigationContorllerAnimatorSlideAndFade.m</string>
+						<string>Resources/Util/Enums/AppEnums.swift</string>
 						<string>Resources/Util/Extensions/Foundation/CLLocationCoordinate2D.swift</string>
 						<string>Resources/Util/Extensions/Foundation/Double.swift</string>
 						<string>Resources/Util/Extensions/Foundation/Notification.swift</string>
@@ -345,6 +357,17 @@
 				<string>SideMenu</string>
 				<string>Source</string>
 				<string>Animations</string>
+			</array>
+		</dict>
+		<key>Resources/Util/Enums/AppEnums.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>Resources/Util/Enums/AppEnums.swift</string>
+			<key>Group</key>
+			<array>
+				<string>Resources</string>
+				<string>Util</string>
+				<string>Enums</string>
 			</array>
 		</dict>
 		<key>Resources/Util/Extensions/Foundation/CLLocationCoordinate2D.swift</key>
@@ -684,6 +707,42 @@
 				<string>View</string>
 			</array>
 		</dict>
+		<key>SidePanel/View/CustomViews/LeftMenuCell/Emptycell.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>SidePanel/View/CustomViews/LeftMenuCell/Emptycell.swift</string>
+			<key>Group</key>
+			<array>
+				<string>SidePanel</string>
+				<string>View</string>
+				<string>CustomViews</string>
+				<string>LeftMenuCell</string>
+			</array>
+		</dict>
+		<key>SidePanel/View/CustomViews/LeftMenuCell/MenuCell.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>SidePanel/View/CustomViews/LeftMenuCell/MenuCell.swift</string>
+			<key>Group</key>
+			<array>
+				<string>SidePanel</string>
+				<string>View</string>
+				<string>CustomViews</string>
+				<string>LeftMenuCell</string>
+			</array>
+		</dict>
+		<key>SidePanel/View/CustomViews/LeftMenuCell/Profilecell.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>SidePanel/View/CustomViews/LeftMenuCell/Profilecell.swift</string>
+			<key>Group</key>
+			<array>
+				<string>SidePanel</string>
+				<string>View</string>
+				<string>CustomViews</string>
+				<string>LeftMenuCell</string>
+			</array>
+		</dict>
 		<key>SidePanel/Wireframe/SidePanelWireframe.swift</key>
 		<dict>
 			<key>Path</key>
@@ -701,6 +760,87 @@
 			<key>Group</key>
 			<array>
 				<string>SidePanel</string>
+			</array>
+		</dict>
+		<key>Home/DataManager/API/HomeAPIDataManager.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>Home/DataManager/API/HomeAPIDataManager.swift</string>
+			<key>Group</key>
+			<array>
+				<string>Home</string>
+				<string>DataManager</string>
+				<string>API</string>
+			</array>
+		</dict>
+		<key>Home/DataManager/Local/HomeLocalDataManager.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>Home/DataManager/Local/HomeLocalDataManager.swift</string>
+			<key>Group</key>
+			<array>
+				<string>Home</string>
+				<string>DataManager</string>
+				<string>API</string>
+			</array>
+		</dict>
+		<key>Home/Interactor/HomeInteractor.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>Home/Interactor/HomeInteractor.swift</string>
+			<key>Group</key>
+			<array>
+				<string>Home</string>
+				<string>Interactor</string>
+			</array>
+		</dict>
+		<key>Home/Presenter/HomePresenter.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>Home/Presenter/HomePresenter.swift</string>
+			<key>Group</key>
+			<array>
+				<string>Home</string>
+				<string>Presenter</string>
+			</array>
+		</dict>
+		<key>Home/Protocols/HomeProtocols.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>Home/Protocols/HomeProtocols.swift</string>
+			<key>Group</key>
+			<array>
+				<string>Home</string>
+				<string>Protocols</string>
+			</array>
+		</dict>
+		<key>Home/View/HomeView.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>Home/View/HomeView.swift</string>
+			<key>Group</key>
+			<array>
+				<string>Home</string>
+				<string>View</string>
+			</array>
+		</dict>
+		<key>Home/Wireframe/HomeWireframe.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>Home/Wireframe/HomeWireframe.swift</string>
+			<key>Group</key>
+			<array>
+				<string>Home</string>
+				<string>Wireframe</string>
+			</array>
+		</dict>
+		<key>Home/Home.storyboard</key>
+		<dict>
+			<key>Path</key>
+			<string>Home/Home.storyboard</string>
+			<key>Group</key>
+			<array>
+				<string>Home</string>
 			</array>
 		</dict>
 	</dict>

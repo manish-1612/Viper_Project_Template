@@ -11,7 +11,7 @@ import UIKit
 
 class SidePanelWireframe: SidePanelWireframeProtocol {
     
-    var rootWireframe: RootWireframe = RootWireframe()
+    var rootWireframe: RootWireframe?
     var view: SidePanelView!
     var presentedView: UIViewController?
     var sideMenuController: SlideNavigationController!
@@ -39,7 +39,11 @@ extension SidePanelWireframe {
 
         sideMenuController = SlideNavigationController(rootViewController: rootViewController)
         sideMenuController.leftMenu = self.view
-        
+       
+        if self.view.tableview != nil{
+            self.view.tableview.selectRow(at: IndexPath(row: 0, section: 2), animated: false, scrollPosition: .top)
+        }
+
         createLeftMenuAndShowWith(window: window)
     }
     
@@ -76,7 +80,7 @@ extension SidePanelWireframe {
     
     // MARK: LoginWireframeProtocol
     func presentSidePanelModule(fromWindow window: UIWindow) {
-        self.rootWireframe.showRootViewController(self.view, inWindow: window)
+        self.rootWireframe?.showRootViewController(self.view, inWindow: window)
     }
 
     func presentLoginScreen() {

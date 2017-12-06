@@ -11,10 +11,11 @@ import UIKit
 class AppDependencies {
     
     let rootWireframe = RootWireframe()
-
+    
     let sidePanelWireframe = SidePanelWireframe()
     let loginWireFrame = LoginWireframe()
-
+    let homeWireframe = HomeWireframe()
+    
     static let shared = AppDependencies()
     
     
@@ -39,11 +40,21 @@ class AppDependencies {
         // ----------------------------------------------------------------
         //   configuring wireframe dependencies
         // ----------------------------------------------------------------
-
-        //sidepanel
+        
+        //login wireframe
+        loginWireFrame.rootWireframe = rootWireframe
+        loginWireFrame.homeWireframe = homeWireframe
+        loginWireFrame.sidePanelWireframe = sidePanelWireframe
+        
+        //sidepanel wireframe
         sidePanelWireframe.rootWireframe = rootWireframe
         sidePanelWireframe.loginWireframe = loginWireFrame
+        
+        //home wireframe
+        homeWireframe.rootWireframe = rootWireframe
+        
     }
     
-
+    
 }
+

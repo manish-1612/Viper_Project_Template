@@ -20,11 +20,71 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pga-ij-GBr">
+                                <rect key="frame" x="61" y="143" width="252" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="252" id="HZ7-Q4-959"/>
+                                    <constraint firstAttribute="height" constant="30" id="kzT-Dd-q3a"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOGIN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GgB-qy-9UD">
+                                <rect key="frame" x="88" y="55" width="199" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Asp-a2-bhJ"/>
+                                    <constraint firstAttribute="width" constant="199" id="RNA-bP-5bC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P4e-ME-IRZ">
+                                <rect key="frame" x="108.5" y="309" width="158" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="158" id="Qne-i1-W5D"/>
+                                    <constraint firstAttribute="height" constant="30" id="dZF-fu-YqF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="loginButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Keg-kd-wSU"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u4Y-Ug-xbP">
+                                <rect key="frame" x="61" y="202" width="252" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="252" id="BBh-dy-VyX"/>
+                                    <constraint firstAttribute="height" constant="30" id="Q9h-oJ-KPo"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="u4Y-Ug-xbP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PGj-Tn-uGX"/>
+                            <constraint firstItem="GgB-qy-9UD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rxe-wF-vnh"/>
+                            <constraint firstItem="GgB-qy-9UD" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="35" id="SoV-pV-vqu"/>
+                            <constraint firstItem="pga-ij-GBr" firstAttribute="top" secondItem="GgB-qy-9UD" secondAttribute="bottom" constant="67" id="U3F-x7-1jI"/>
+                            <constraint firstItem="P4e-ME-IRZ" firstAttribute="top" secondItem="u4Y-Ug-xbP" secondAttribute="bottom" constant="77" id="Zxx-5V-91f"/>
+                            <constraint firstItem="P4e-ME-IRZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cFg-bE-LIl"/>
+                            <constraint firstItem="pga-ij-GBr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pOQ-oT-o3q"/>
+                            <constraint firstItem="u4Y-Ug-xbP" firstAttribute="top" secondItem="pga-ij-GBr" secondAttribute="bottom" constant="29" id="ull-7Y-0C3"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="pga-ij-GBr" id="tgh-LS-AJy"/>
+                        <outlet property="loginButton" destination="P4e-ME-IRZ" id="gaD-t3-BuD"/>
+                        <outlet property="passwordTextField" destination="u4Y-Ug-xbP" id="rdQ-32-dtY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="45.600000000000001" y="-18.440779610194905"/>
         </scene>
     </scenes>
 </document>

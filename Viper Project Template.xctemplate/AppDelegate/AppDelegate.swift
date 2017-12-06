@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  hello
+//  ___PROJECTNAME___
 //
-//  Created by Manish Kumar on 04/12/17.
-//  Copyright © 2017 Innofied. All rights reserved.
+//  Created ___FULLUSERNAME___ on ___DATE___.
+//  Copyright © ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
 //
 
 import UIKit
