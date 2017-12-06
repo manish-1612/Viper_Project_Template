@@ -114,6 +114,7 @@
 						<string>Resources/Util/Extensions/UIKit/UIVIewController.swift</string>
 						<string>Resources/Util/Extensions/UIKit/UIWindow.swift</string>
 						<string>UI/Storyboards/Storyboard.swift</string>
+						<string>SupportingFiles/___PROJECTNAME___-Bridging-Header.h</string>
 					</array>
 				</dict>
 			</dict>
@@ -841,6 +842,15 @@
 			<key>Group</key>
 			<array>
 				<string>Home</string>
+			</array>
+		</dict>
+		<key>SupportingFiles/___PROJECTNAME___-Bridging-Header.h</key>
+		<dict>
+			<key>Path</key>
+			<string>SupportingFiles/___PROJECTNAME___-Bridging-Header.h</string>
+			<key>Group</key>
+			<array>
+				<string>SupportingFiles</string>
 			</array>
 		</dict>
 	</dict>
