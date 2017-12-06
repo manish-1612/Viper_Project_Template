@@ -199,12 +199,13 @@ extension SidePanelView{
                 sideMenuNavVC.closeMenu(completion: {
                     // Do nothing
                 })
-                self.showAlert(title: "LogoutTitle".localized, message: "LogoutDesc".localized, primaryButtonTitle: "Logout".localized, secondaryButtonTitle: "KeyboardCancel".localized, primaryButtonAction: {
-                    self.logoutUser()
-                }, secondaryAction: { 
+                self.showAlert(title: "Logout".localized, message: "Are you sure you want to logout".localized, primaryButtonTitle: "Logout".localized, secondaryButtonTitle: "Cancel".localized, primaryButtonAction: {
+                    //self.logoutUser()
+                    self.logoutUserRequestSuccessful()
+                }, secondaryAction: {
                     //nothing
                 })
-                
+
                 
             default:
                 break
@@ -232,7 +233,7 @@ extension SidePanelView{
     
     func logoutUserRequestSuccessful(){
         self.selectedIndex = IndexPath(row: 0, section: 2)
-        //self.presenter!.presentLoginScreen()
+        self.presenter!.presentLoginScreen()
 
     }
 }
