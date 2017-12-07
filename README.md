@@ -11,11 +11,11 @@ The project template contains some basic modules like Login, Home, Settings, Log
 5. Paste the folder you copied.
 6. If you have Xcode open, please quit Xcode.
 7. Now open Xcode again, and create a new project.
-8. You will see a screen a like this. Choose the `Viper Project Template` option and you are good to go.
+8. You will see a screen a like this. Choose the `Viper Project Template` option.
 ![Create new Project](https://github.com/manish-1612/Viper_Project_Template/blob/master/Assets/CreteNewProject.png)
 
 
 ## Project Configurations
 Just search for file `YourProject-Bridging-Header.h` under `SupportingFiles` folder.
-Just set the path of this file in `Objective C Bridging Header` found in `Build Settings` under **Project Settings**
+Just set the path of this file in `Objective C Bridging Header` found in `Build Settings` under **Project Settings** and you are good to go.
     
