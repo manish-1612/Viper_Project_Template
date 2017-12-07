@@ -1,5 +1,4 @@
 
-Inline-style: 
 ![](https://github.com/manish-1612/Viper_Project_Template/blob/master/Assets/Viper.png)
 
 # Viper_Project_Template
