@@ -1,3 +1,7 @@
+
+Inline-style: 
+![](https://github.com/manish-1612/Viper_Project_Template/blob/master/Assets/Viper.png)
+
 # Viper_Project_Template
 The respository contains a project template in VIPER architecture.
 The project template contains some basic modules like Login, Home, Settings, Logout.
