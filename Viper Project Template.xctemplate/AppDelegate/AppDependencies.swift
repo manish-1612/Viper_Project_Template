@@ -15,7 +15,8 @@ class AppDependencies {
     let sidePanelWireframe = SidePanelWireframe()
     let loginWireFrame = LoginWireframe()
     let homeWireframe = HomeWireframe()
-    
+    let settingsWireframe = SettingsWireframe()
+
     static let shared = AppDependencies()
     
     
@@ -53,6 +54,9 @@ class AppDependencies {
         //home wireframe
         homeWireframe.rootWireframe = rootWireframe
         
+        //settings wireframe
+        settingsWireframe.rootWireframe = rootWireframe
+
     }
     
     

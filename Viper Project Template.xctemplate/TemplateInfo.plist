@@ -78,6 +78,14 @@
 						<string>Home/View/HomeView.swift</string>
 						<string>Home/Wireframe/HomeWireframe.swift</string>
 						<string>Home/Home.storyboard</string>
+						<string>Settings/DataManager/API/SettingsAPIDataManager.swift</string>
+						<string>Settings/DataManager/Local/SettingsLocalDataManager.swift</string>
+						<string>Settings/Interactor/SettingsInteractor.swift</string>
+						<string>Settings/Presenter/SettingsPresenter.swift</string>
+						<string>Settings/Protocols/SettingsProtocols.swift</string>
+						<string>Settings/View/SettingsView.swift</string>
+						<string>Settings/Wireframe/SettingsWireframe.swift</string>
+						<string>Settings/Settings.storyboard</string>
 						<string>AppDelegate.swift</string>
 						<string>AppDelegate/AppDependencies.swift</string>
 						<string>Resources/View/RootWireframe.swift</string>
@@ -842,6 +850,87 @@
 			<key>Group</key>
 			<array>
 				<string>Home</string>
+			</array>
+		</dict>
+		<key>Settings/DataManager/API/SettingsAPIDataManager.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>Settings/DataManager/API/SettingsAPIDataManager.swift</string>
+			<key>Group</key>
+			<array>
+				<string>Settings</string>
+				<string>DataManager</string>
+				<string>API</string>
+			</array>
+		</dict>
+		<key>Settings/DataManager/Local/SettingsLocalDataManager.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>Settings/DataManager/Local/SettingsLocalDataManager.swift</string>
+			<key>Group</key>
+			<array>
+				<string>Settings</string>
+				<string>DataManager</string>
+				<string>Local</string>
+			</array>
+		</dict>
+		<key>Settings/Interactor/SettingsInteractor.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>Settings/Interactor/SettingsInteractor.swift</string>
+			<key>Group</key>
+			<array>
+				<string>Settings</string>
+				<string>Interactor</string>
+			</array>
+		</dict>
+		<key>Settings/Presenter/SettingsPresenter.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>Settings/Presenter/SettingsPresenter.swift</string>
+			<key>Group</key>
+			<array>
+				<string>Settings</string>
+				<string>Presenter</string>
+			</array>
+		</dict>
+		<key>Settings/Protocols/SettingsProtocols.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>Settings/Protocols/SettingsProtocols.swift</string>
+			<key>Group</key>
+			<array>
+				<string>Settings</string>
+				<string>Protocols</string>
+			</array>
+		</dict>
+		<key>Settings/View/SettingsView.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>Settings/View/SettingsView.swift</string>
+			<key>Group</key>
+			<array>
+				<string>Settings</string>
+				<string>View</string>
+			</array>
+		</dict>
+		<key>Settings/Wireframe/SettingsWireframe.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>Settings/Wireframe/SettingsWireframe.swift</string>
+			<key>Group</key>
+			<array>
+				<string>Settings</string>
+				<string>Wireframe</string>
+			</array>
+		</dict>
+		<key>Settings/Settings.storyboard</key>
+		<dict>
+			<key>Path</key>
+			<string>Settings/Settings.storyboard</string>
+			<key>Group</key>
+			<array>
+				<string>Settings</string>
 			</array>
 		</dict>
 		<key>SupportingFiles/___PROJECTNAME___-Bridging-Header.h</key>

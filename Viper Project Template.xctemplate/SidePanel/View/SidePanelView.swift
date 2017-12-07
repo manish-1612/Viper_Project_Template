@@ -17,6 +17,8 @@ class SidePanelView: UIViewController, SidePanelViewProtocol {
     @IBOutlet weak var tableview: UITableView!
     
     var homeView : HomeView?
+    var settingsView : SettingsView?
+
     var isFirstSelectionDone = false
     var selectedIndex : IndexPath = IndexPath(row: 0, section: 2) {
         didSet {
@@ -42,6 +44,7 @@ class SidePanelView: UIViewController, SidePanelViewProtocol {
         let appDependencies = appDelegate.appDependencies
        
         homeView = appDependencies.homeWireframe.view
+        settingsView = appDependencies.settingsWireframe.view
 
 //        editProfileView = appDependencies.editProfileWireframe.view
 //        bidListView = appDependencies.bidListWireframe.view
@@ -189,9 +192,8 @@ extension SidePanelView{
 
                 
             case SideMenuAppOptions.settings.value:
-                print("option for settings page")
-                //sideMenuNavVC.popAllAndSwitch(to: myRidesView, withCompletion: {})
-                
+                sideMenuNavVC.popAllAndSwitch(to: settingsView, withCompletion: {})
+
                 
             case SideMenuAppOptions.logout.value:
                 //logoutUser()
