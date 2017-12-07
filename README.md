@@ -12,6 +12,7 @@ The project template contains some basic modules like Login, Home, Settings, Log
 6. If you have Xcode open, please quit Xcode.
 7. Now open Xcode again, and create a new project.
 8. You will see a screen a like this. Choose the `Viper Project Template` option and you are good to go.
+![Create new Project](https://github.com/manish-1612/Viper_Project_Template/blob/master/Assets/CreteNewProject.png)
 
 
 ## Project Configurations
