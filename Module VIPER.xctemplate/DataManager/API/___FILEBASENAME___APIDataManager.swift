@@ -9,7 +9,7 @@
 
 import UIKit
 
-class ___FILEBASENAME___APIDataManager: ___FILEBASENAME___APIDataManagerInputProtocol {
+class ___VARIABLE_viperModuleName___APIDataManager: ___VARIABLE_viperModuleName___APIDataManagerInputProtocol {
 
     init() {}
     

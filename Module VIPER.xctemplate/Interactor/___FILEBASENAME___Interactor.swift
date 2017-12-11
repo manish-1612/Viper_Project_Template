@@ -9,18 +9,18 @@
 
 import UIKit
 
-class ___FILEBASENAME___Interactor: ___FILEBASENAME___InteractorInputProtocol,
-    ___FILEBASENAME___InteractorOutputProtocol{
+class ___VARIABLE_viperModuleName___Interactor: ___VARIABLE_viperModuleName___InteractorInputProtocol,
+    ___VARIABLE_viperModuleName___InteractorOutputProtocol{
 
-    var presenter: ___FILEBASENAME___PresenterProtocol?
-    var APIDataManager: ___FILEBASENAME___APIDataManagerInputProtocol?
-    var localDataManager: ___FILEBASENAME___LocalDataManagerInputProtocol?
+    var presenter: ___VARIABLE_viperModuleName___PresenterProtocol?
+    var APIDataManager: ___VARIABLE_viperModuleName___APIDataManagerInputProtocol?
+    var localDataManager: ___VARIABLE_viperModuleName___LocalDataManagerInputProtocol?
     
     init() {
         // TODO: USE CUSTOM INITIALIZATION IF YOU WANT TO USE DEPENDENCY INJECTION
         // http://ilya.puchka.me/dependency-injection-in-swift/
-        APIDataManager = ___FILEBASENAME___APIDataManager()
-        localDataManager = ___FILEBASENAME___LocalDataManager()
+        APIDataManager = ___VARIABLE_viperModuleName___APIDataManager()
+        localDataManager = ___VARIABLE_viperModuleName___LocalDataManager()
     }
     
     /**

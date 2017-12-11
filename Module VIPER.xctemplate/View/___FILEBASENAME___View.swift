@@ -9,9 +9,9 @@
 
 import UIKit
 
-class ___FILEBASENAME___View: UIViewController, ___FILEBASENAME___ViewProtocol {
+class ___VARIABLE_viperModuleName___View: UIViewController, ___VARIABLE_viperModuleName___ViewProtocol {
 
-	var presenter: ___FILEBASENAME___PresenterProtocol?
+	var presenter: ___VARIABLE_viperModuleName___PresenterProtocol?
 
     // MARK: - View Life Cycle Methods
 	override func viewDidLoad() {

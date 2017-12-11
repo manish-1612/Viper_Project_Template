@@ -12,19 +12,19 @@ import UIKit
 
 
 //MARK: View -
-protocol ___FILEBASENAME___ViewProtocol: class {
-    var presenter: ___FILEBASENAME___PresenterProtocol?  { get set }
+protocol ___VARIABLE_viperModuleName___ViewProtocol: class {
+    var presenter: ___VARIABLE_viperModuleName___PresenterProtocol?  { get set }
     /**
      * Add here your methods for communication PRESENTER -> VIEW
      */
 }
 
 //MARK: Wireframe -
-protocol ___FILEBASENAME___WireframeProtocol: class {
+protocol ___VARIABLE_viperModuleName___WireframeProtocol: class {
     var rootWireframe: RootWireframe? { get set }
-    func present___FILEBASENAME___Module(fromWindow window: UIWindow)
-    func present___FILEBASENAME___Module(fromNavView view: UINavigationController)
-    func present___FILEBASENAME___Module(fromView view: UIViewController)
+    func present___VARIABLE_viperModuleName___Module(fromWindow window: UIWindow)
+    func present___VARIABLE_viperModuleName___Module(fromNavView view: UINavigationController)
+    func present___VARIABLE_viperModuleName___Module(fromView view: UIViewController)
     /**
      * Add here your methods for communication PRESENTER -> WIREFRAME
      */
@@ -32,7 +32,7 @@ protocol ___FILEBASENAME___WireframeProtocol: class {
 }
 
 //MARK: Presenter -
-protocol ___FILEBASENAME___PresenterProtocol: class {
+protocol ___VARIABLE_viperModuleName___PresenterProtocol: class {
     /**
      * Add here your methods for communication VIEW -> PROTOCOL
      */
@@ -40,19 +40,19 @@ protocol ___FILEBASENAME___PresenterProtocol: class {
 }
 
 //MARK: Interactor -
-protocol ___FILEBASENAME___InteractorInputProtocol: class {
+protocol ___VARIABLE_viperModuleName___InteractorInputProtocol: class {
     
-    var presenter: ___FILEBASENAME___PresenterProtocol?  { get set }
-    var APIDataManager: ___FILEBASENAME___APIDataManagerInputProtocol? { get set }
-    var localDataManager: ___FILEBASENAME___LocalDataManagerInputProtocol? { get set }
+    var presenter: ___VARIABLE_viperModuleName___PresenterProtocol?  { get set }
+    var APIDataManager: ___VARIABLE_viperModuleName___APIDataManagerInputProtocol? { get set }
+    var localDataManager: ___VARIABLE_viperModuleName___LocalDataManagerInputProtocol? { get set }
     
     /**
      * Add here your methods for communication PRESENTER -> INTERACTOR
      */
 }
-protocol ___FILEBASENAME___InteractorOutputProtocol: class {
+protocol ___VARIABLE_viperModuleName___InteractorOutputProtocol: class {
     
-    var presenter: ___FILEBASENAME___PresenterProtocol?  { get set }
+    var presenter: ___VARIABLE_viperModuleName___PresenterProtocol?  { get set }
     /**
      * Add here your methods for communication INTERACTOR -> PRESENTER
      */
@@ -62,7 +62,7 @@ protocol ___FILEBASENAME___InteractorOutputProtocol: class {
 
 
 //MARK: - DataManager -
-protocol ___FILEBASENAME___DataManagerInputProtocol: class {
+protocol ___VARIABLE_viperModuleName___DataManagerInputProtocol: class {
     /**
      * Add here your methods for communication INTERACTOR -> DATAMANAGER
      */
@@ -70,7 +70,7 @@ protocol ___FILEBASENAME___DataManagerInputProtocol: class {
 }
 
 //MARK: API -
-protocol ___FILEBASENAME___APIDataManagerInputProtocol: class {
+protocol ___VARIABLE_viperModuleName___APIDataManagerInputProtocol: class {
     /**
      * Add here your methods for communication INTERACTOR -> APIDATAMANAGER
      */
@@ -78,7 +78,7 @@ protocol ___FILEBASENAME___APIDataManagerInputProtocol: class {
 }
 
 //MARK: Local -
-protocol ___FILEBASENAME___LocalDataManagerInputProtocol: class {
+protocol ___VARIABLE_viperModuleName___LocalDataManagerInputProtocol: class {
     /**
      * Add here your methods for communication INTERACTOR -> LOCALDATAMANAGER
      */

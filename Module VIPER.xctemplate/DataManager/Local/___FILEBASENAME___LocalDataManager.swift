@@ -9,7 +9,7 @@
 
 import UIKit
 
-class ___FILEBASENAME___LocalDataManager: ___FILEBASENAME___LocalDataManagerInputProtocol {
+class ___VARIABLE_viperModuleName___LocalDataManager: ___VARIABLE_viperModuleName___LocalDataManagerInputProtocol {
 
     init() {}
     

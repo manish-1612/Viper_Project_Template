@@ -9,13 +9,13 @@
 
 import UIKit
 
-class ___FILEBASENAME___Presenter: ___FILEBASENAME___PresenterProtocol {
+class ___VARIABLE_viperModuleName___Presenter: ___VARIABLE_viperModuleName___PresenterProtocol {
 
-    weak private var view: ___FILEBASENAME___ViewProtocol?
-    private let interactor: ___FILEBASENAME___InteractorInputProtocol
-    private let wireframe: ___FILEBASENAME___WireframeProtocol
+    weak private var view: ___VARIABLE_viperModuleName___ViewProtocol?
+    private let interactor: ___VARIABLE_viperModuleName___InteractorInputProtocol
+    private let wireframe: ___VARIABLE_viperModuleName___WireframeProtocol
 
-    init(interface: ___FILEBASENAME___View, interactor: ___FILEBASENAME___InteractorInputProtocol, wireframe: ___FILEBASENAME___WireframeProtocol) {
+    init(interface: ___VARIABLE_viperModuleName___View, interactor: ___VARIABLE_viperModuleName___InteractorInputProtocol, wireframe: ___VARIABLE_viperModuleName___WireframeProtocol) {
         self.view = interface
         self.interactor = interactor
         self.wireframe = wireframe
