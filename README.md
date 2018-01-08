@@ -23,7 +23,7 @@ Just search for file `YourProject-Bridging-Header.h` under `SupportingFiles` fol
 Just set the path of this file in `Objective C Bridging Header` found in `Build Settings` under **Project Settings** and you are good to go.
     
 # Viper_Module_Template
-The respository contains a Module template in VIPER architecture.The module contains all the files like View, Presenter, Protocol, Inetarctor, API Data Manager, Wireframe along with code for some basic module configurations.
+The respository contains a Module template in VIPER architecture. The module contains all the files like View, Presenter, Protocol, Inetarctor, API Data Manager, Wireframe along with code for some basic module configurations.
 
 ## Template Configurations
 1. Download or clone the respository.
@@ -33,5 +33,6 @@ The respository contains a Module template in VIPER architecture.The module cont
 5. Paste the folder you copied.
 6. If you have Xcode open, please quit Xcode.
 7. Now open Xcode again, and any existing VIPER project.
-8. You will see a screen a like this. Choose the `module VIPER` option.
+8. Truy adding a new file.
+9. You will see a screen a like this. Choose the `module VIPER` option.
 ![Create new module](https://github.com/manish-1612/Viper_Project_Template/blob/master/Assets/title-image2.png)
