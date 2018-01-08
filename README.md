@@ -32,6 +32,6 @@ The respository contains a Module template in VIPER architecture.The module cont
 4. Now Go to Location `/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Templates/File\ Templates/Source`.
 5. Paste the folder you copied.
 6. If you have Xcode open, please quit Xcode.
-7. Now open Xcode again, and create a new project.
-8. You will see a screen a like this. Choose the `Viper Project Template` option.
+7. Now open Xcode again, and any existing VIPER project.
+8. You will see a screen a like this. Choose the `module VIPER` option.
 ![Create new module](https://github.com/manish-1612/Viper_Project_Template/blob/master/Assets/title-image2.png)
