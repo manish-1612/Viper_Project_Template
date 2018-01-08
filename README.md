@@ -34,4 +34,4 @@ The respository contains a Module template in VIPER architecture.The module cont
 6. If you have Xcode open, please quit Xcode.
 7. Now open Xcode again, and create a new project.
 8. You will see a screen a like this. Choose the `Viper Project Template` option.
-![Create new Project](https://github.com/manish-1612/Viper_Project_Template/blob/master/Assets/CreteNewProject.png)
+![Create new module](https://github.com/manish-1612/Viper_Project_Template/blob/master/Assets/title-image2.png)
