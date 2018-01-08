@@ -22,3 +22,4 @@ The project template contains some basic modules like Login, Home, Settings, Log
 Just search for file `YourProject-Bridging-Header.h` under `SupportingFiles` folder.
 Just set the path of this file in `Objective C Bridging Header` found in `Build Settings` under **Project Settings** and you are good to go.
     
+Module Template For Viper Project: https://github.com/manish-1612/Viper_Module_Template
