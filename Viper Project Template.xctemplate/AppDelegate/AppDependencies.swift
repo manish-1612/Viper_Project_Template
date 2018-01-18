@@ -1,5 +1,5 @@
 //
-//  BRRAppDependencies.swift
+//  AppDependencies.swift
 //  ___PROJECTNAME___
 //
 //  Created ___FULLUSERNAME___ on ___DATE___.
