@@ -10,7 +10,7 @@ The project template contains some basic modules like Login, Home, Settings, Log
 1. Download or clone the respository.
 2. Under the repository you will find a folder named `Viper Project Template.xctemplate`.
 3. Copy the template.
-4. Now Go to Location `/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Templates/Project\ Templates/iOS/Application`.
+4. Now Go to Location `/Applications/Xcode.app/Contents/Developer/Library/Xcode/Templates/Project\ Templates/CrossPlatform/Application`.
 5. Paste the folder you copied.
 6. If you have Xcode open, please quit Xcode.
 7. Now open Xcode again, and create a new project.
