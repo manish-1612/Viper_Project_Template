@@ -18,6 +18,8 @@ The project template contains some basic modules like Login, Home, Settings, Log
 ![Create new Project](https://github.com/manish-1612/Viper_Project_Template/blob/master/Assets/CreteNewProject.png)
 
 
+NOTE : Both Xcode 9 and 10 iOS project templates are at the following path `/Applications/Xcode.app/Contents/Developer/Library/Xcode/Templates/Project\ Templates/CrossPlatform/Application`
+
 ## Project Configurations
 Just search for file `YourProject-Bridging-Header.h` under `SupportingFiles` folder.
 Just set the path of this file in `Objective C Bridging Header` found in `Build Settings` under **Project Settings** and you are good to go.
